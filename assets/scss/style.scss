@@ -1,0 +1,6 @@
+@import "./variables", "./reset", "./menu", "./home", "./guarantee",
+  "./depoiments", "./faq";
+
+.grid-layout {
+  @include grid-layout();
+}

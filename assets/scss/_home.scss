@@ -1,0 +1,80 @@
+#s-home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+    margin-top: $gap-64;
+  }
+
+  .grid-layout {
+    #container-home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: $gap-96;
+
+      @include responsive-desktop {
+        flex-wrap: wrap;
+        gap: $gap-48;
+      }
+
+      #info-main {
+        width: 100%;
+        text-align: center;
+        z-index: 5;
+
+        h1 {
+          font-size: 7.2rem;
+          font-weight: 600;
+          margin-top: 16px;
+          line-height: 110%;
+          margin-bottom: $gap-32;
+
+          @include responsive-desktop {
+            width: 100%;
+            font-size: 4rem;
+          }
+        }
+
+        > p {
+          font-size: 2.4rem;
+          line-height: 160%;
+          color: $color-gray;
+          font-weight: 300;
+          width: 80%;
+          margin: 0 auto;
+
+          @include responsive-desktop {
+            width: 100%;
+            font-size: 2rem;
+          }
+        }
+
+        a {
+          button {
+            margin-top: 48px;
+            border-radius: 50px;
+            padding: 16px 56px;
+            background: $color-primary;
+            font-weight: 500;
+            font-size: 2rem;
+            color: $color-white;
+            cursor: pointer;
+
+            @include responsive-desktop {
+              width: 100%;
+            }
+
+            &:hover {
+              background: $color-white;
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

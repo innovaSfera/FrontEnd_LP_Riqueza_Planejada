@@ -1,0 +1,62 @@
+#s-depoiments {
+  padding: $gap-96 0px;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  .grid-layout {
+    > h2 {
+      font-size: 4.8rem;
+      font-weight: 600;
+      margin-bottom: $gap-56;
+
+      @include responsive-desktop {
+        max-width: 100%;
+        font-size: 4rem;
+      }
+
+      b {
+        color: $color-secondary;
+        font-weight: 600;
+      }
+    }
+
+    .testimonial-card {
+      padding: 24px;
+      background-color: $color-dark-secondary;
+      margin: 0 8px;
+      border-radius: 8px;
+      text-align: left;
+
+      p {
+        font-size: 2rem;
+        line-height: 160%;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+        gap: $gap-16;
+        margin-top: $gap-40;
+
+        img {
+          width: 56px;
+          border-radius: 100%;
+        }
+
+        span {
+          h3 {
+            font-size: 2rem;
+            margin-bottom: $gap-8;
+          }
+
+          a {
+            font-size: 1.8rem;
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+}

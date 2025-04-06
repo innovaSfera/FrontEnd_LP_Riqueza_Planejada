@@ -1,0 +1,83 @@
+#s-faq {
+  padding: $gap-96 0px;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  .container-faq {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+
+    @include responsive-desktop {
+      flex-wrap: wrap;
+    }
+
+    > div {
+      @include responsive-desktop {
+        width: 100%;
+      }
+    }
+
+    > div:nth-child(1) {
+      h2 {
+        font-size: 4rem;
+        margin-bottom: $gap-32;
+        font-weight: 600;
+        color: $color-secondary;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  article {
+    background-color: $color-dark-secondary;
+    border-radius: 24px;
+  }
+
+  .accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: $gap-24;
+    width: 100%;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 150%;
+      color: $color-secondary;
+    }
+
+    .icon {
+      font-size: 3.2rem;
+      font-weight: 300;
+      color: $color-white;
+    }
+  }
+
+  .panel {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 1s ease;
+    margin-bottom: $gap-24;
+
+    p {
+      margin: 0 0 $gap-40 0px;
+      font-size: 2rem;
+      color: $color-white;
+      line-height: 160%;
+      padding: $gap-24 $gap-24 0 $gap-24;
+    }
+
+    a {
+      color: $color-primary;
+    }
+  }
+}

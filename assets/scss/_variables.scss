@@ -1,0 +1,77 @@
+$font-title: "Libre Baskerville";
+$font-description: "DM Sans";
+
+$color-primary: linear-gradient(
+  200deg,
+  rgba(171, 117, 53, 1) 0%,
+  rgba(252, 211, 95, 1) 50%,
+  rgba(171, 117, 53, 1) 100%
+);
+$color-secondary: linear-gradient(
+  200deg,
+  rgba(131, 86, 34, 1) 0%,
+  rgba(200, 151, 78, 1) 100%
+);
+
+$color-white: #ffffff;
+$color-gray: #bdbdbd;
+
+$color-dark: #00010d;
+$color-dark-secondary: #0f1116;
+$color-dark-border: #1d212b;
+
+$gap-8: 8px;
+$gap-16: 16px;
+$gap-24: 24px;
+$gap-32: 32px;
+$gap-40: 40px;
+$gap-48: 48px;
+$gap-56: 56px;
+$gap-64: 64px;
+$gap-72: 72px;
+$gap-80: 80px;
+$gap-88: 88px;
+$gap-96: 96px;
+
+@mixin responsive-desktop {
+  @media screen and (max-width: 1140px) {
+    @content;
+  }
+}
+
+@mixin responsive-tablet {
+  @media screen and (max-width: 688px) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}
+
+@mixin spacing-section() {
+  padding: $gap-96 $gap-56;
+  @include responsive-tablet {
+    padding: $gap-32 $gap-24;
+  }
+}
+
+@mixin flexbox-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexbox-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-layout() {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 0px $gap-24;
+}

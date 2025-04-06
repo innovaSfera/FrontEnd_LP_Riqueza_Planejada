@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-title;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  margin: 0;
+  font-family: $font-title;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $font-title;
+  font-weight: 500;
+}
+
+button,
+input {
+  border: 0;
+  font-family: $font-title;
+  font-weight: 500;
+  &:focus {
+    border: 0;
+  }
+}
+
+body {
+  font-family: $font-title;
+  background-color: $color-dark;
+  color: $color-white;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
