@@ -1,6 +1,37 @@
-@import "./variables", "./reset", "./menu", "./home", "./guarantee",
-  "./depoiments", "./faq";
+@import "./variables", "./reset", "./menu", "./home", "./swiper", "./guarantee",
+  "./depoiments", "./pay", "./who", "./transformation", "./help", "./aboutme", "./faq";
 
 .grid-layout {
   @include grid-layout();
+}
+
+#foto-cibelle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -2;
+}
+
+footer {
+  background-color: $color-dark-secondary;
+  padding: 48px;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 16px;
+    font-size: 2.4rem;
+    font-family: $font-description;
+
+    b {
+      background: $color-primary;
+      background-clip: text;
+      color: transparent;
+      font-weight: 400;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    color: $color-gray;
+  }
 }

@@ -1,5 +1,6 @@
-#s-depoiments {
+#s-who {
   padding: 160px 0px;
+  background-color: $color-dark-secondary;
 
   @include responsive-desktop {
     padding: $gap-40 0px;
@@ -19,48 +20,34 @@
       }
     }
 
-    .container-testimonial {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 32px;
-    }
-
-    .testimonial-card {
-      background-color: $color-dark-secondary;
+    .who-card {
+      background-color: $color-dark;
       border: 2px solid $color-dark-border;
-      border-radius: 8px;
-      padding: 24px;
-
-      width: 30%;
-      flex-grow: 1;
+      border-radius: 6px;
+      padding: 32px;
+      margin: 24px 0;
 
       > div {
         display: flex;
         align-items: center;
         gap: 24px;
-        margin-top: 24px;
-
-        img {
-          border-radius: 100%;
-        }
+        margin-bottom: 24px;
 
         h3 {
-          font-size: 1.8rem;
-          margin-bottom: 4px;
-          color: $color-gray;
-        }
+          font-size: 2.4rem;
 
-        a {
-          font-size: 1.6rem;
-          color: $color-gray;
+          b {
+            background: $color-primary;
+            background-clip: text;
+            color: transparent;
+          }
         }
       }
 
       p {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 160%;
-        color: $color-white;
+        color: $color-gray;
       }
     }
 

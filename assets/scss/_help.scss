@@ -1,0 +1,113 @@
+#s-help {
+  padding: 160px 0px;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  .grid-layout {
+    h2 {
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 80px;
+
+      b {
+        background: $color-primary;
+        background-clip: text;
+        color: transparent;
+        font-weight: 400;
+      }
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .cards-help {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 32px;
+
+      > article {
+        width: 30%;
+        flex-grow: 1;
+        height: auto;
+        border-radius: 6px;
+        background-color: $color-dark-secondary;
+        border: 2px solid $color-dark-border;
+        text-align: center;
+        padding: 24px;
+
+        > h4 {
+          font-size: 2.4rem;
+          margin-top: 12px;
+          font-family: $font-description;
+          font-weight: 400;
+        }
+
+        > img {
+          width: 32px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .cards-null {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin: 56px 0px;
+
+      > article {
+        width: 30%;
+        flex-grow: 1;
+        height: auto;
+        text-align: center;
+
+        > h3 {
+          font-size: 2.4rem;
+          margin-top: 12px;
+          font-family: $font-description;
+          font-weight: 400;
+          margin-bottom: 24px;
+        }
+
+        > p {
+          font-size: 2rem;
+          line-height: 160%;
+          color: $color-gray;
+        }
+
+        > img {
+          width: 48px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    a {
+      @include responsive-desktop {
+        width: 100%;
+      }
+
+      button {
+        border-radius: 0px 8px 0px 8px;
+        padding: 16px 40px;
+        background: $color-secondary;
+        font-weight: 500;
+        font-size: 2rem;
+        color: $color-white;
+        cursor: pointer;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+#s-transformation {
+  padding: $gap-96 0px;
+  background: $color-secondary;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  .grid-layout {
+    h2 {
+      text-align: center;
+      font-size: 4rem;
+      width: 85%;
+      margin: 0 auto 24px auto;
+    }
+
+    p {
+      font-size: 2.4rem;
+      text-align: center;
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+}

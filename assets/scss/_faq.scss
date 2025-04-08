@@ -1,14 +1,29 @@
 #s-faq {
-  padding: $gap-96 0px;
+  padding: 160px 0px;
 
   @include responsive-desktop {
     padding: $gap-40 0px;
   }
 
+  .grid-layout {
+    > h2 {
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 80px;
+
+      b {
+        background: $color-primary;
+        background-clip: text;
+        color: transparent;
+        font-weight: 400;
+      }
+    }
+  }
+
   .container-faq {
     width: 100%;
     display: flex;
-    gap: 80px;
+    gap: 48px;
 
     @include responsive-desktop {
       flex-wrap: wrap;
@@ -20,23 +35,80 @@
       }
     }
 
+    > div:nth-child(2) {
+      width: 58%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      a {
+        width: 100%;
+
+        button {
+          border-radius: 0px 8px 0px 8px;
+          padding: 16px 40px;
+          background: $color-secondary;
+          font-weight: 500;
+          font-size: 2rem;
+          color: $color-white;
+          cursor: pointer;
+          width: 100%;
+        }
+      }
+    }
+
     > div:nth-child(1) {
+      width: 40%;
+      background-color: $color-dark-secondary;
+      border: 2px solid $color-dark-border;
+      padding: 48px 32px;
+      text-align: center;
+      border-radius: 8px;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+
       h2 {
-        font-size: 4rem;
-        margin-bottom: $gap-32;
-        font-weight: 600;
+        font-size: 3.2rem;
+        font-weight: 500;
         color: $color-secondary;
       }
 
       p {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
+        width: 80%;
+      }
+
+      > a {
+        width: 100%;
+        background: #139d01;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        padding: 16px 40px;
+
+        img {
+          width: 32px;
+        }
+
+        button {
+          font-weight: 500;
+          font-size: 2rem;
+          color: $color-white;
+          cursor: pointer;
+          width: 100%;
+          background: transparent;
+        }
       }
     }
   }
 
   article {
     background-color: $color-dark-secondary;
-    border-radius: 24px;
+    border-radius: 6px;
+    border: 2px solid $color-dark-border;
   }
 
   .accordion {
@@ -45,20 +117,23 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding: $gap-24;
+    padding: 8px 24px;
     width: 100%;
 
     h3 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 500;
       line-height: 150%;
       color: $color-secondary;
+      font-family: $font-description;
     }
 
     .icon {
-      font-size: 3.2rem;
+      font-size: 4rem;
       font-weight: 300;
-      color: $color-white;
+      background: $color-primary;
+      background-clip: text;
+      color: transparent;
     }
   }
 
@@ -66,7 +141,6 @@
     max-height: 0px;
     overflow: hidden;
     transition: all 1s ease;
-    margin-bottom: $gap-24;
 
     p {
       margin: 0 0 $gap-40 0px;

@@ -1,0 +1,101 @@
+#s-pay {
+  padding: 160px 0px;
+  background-color: $color-dark;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  .grid-layout {
+    article {
+      background-color: $color-dark-secondary;
+      border: 2px solid $color-dark-border;
+      border-radius: 8px;
+      padding: 48px 120px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .container-bonus {
+      h3 {
+        font-size: 3.2rem;
+        margin-bottom: 32px;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 12px 0px;
+
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .container-pay {
+      text-align: center;
+
+      h3 {
+        font-size: 2.4rem;
+
+        b {
+          color: #ff2c2c;
+          text-decoration: line-through;
+          font-weight: 400;
+        }
+      }
+
+      h2 {
+        font-size: 5.6rem;
+        margin: 24px 0;
+
+        b {
+          background: $color-primary;
+          background-clip: text;
+          color: transparent;
+        }
+      }
+
+      h4 {
+        font-size: 2rem;
+        color: $color-gray;
+      }
+
+      div {
+        margin: 40px 0;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+
+      a {
+        @include responsive-desktop {
+          width: 100%;
+        }
+
+        button {
+          border-radius: 0px 8px 0px 8px;
+          padding: 16px 72px;
+          background: $color-secondary;
+          font-weight: 500;
+          font-size: 2rem;
+          color: $color-white;
+          cursor: pointer;
+
+          @include responsive-desktop {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

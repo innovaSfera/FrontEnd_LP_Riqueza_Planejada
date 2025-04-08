@@ -1,6 +1,6 @@
 #s-guarantee {
-  padding: $gap-96 0px;
-  border-top: 1px solid $color-dark-secondary;
+  padding: 160px 0px;
+  background-color: $color-dark-secondary;
 
   @include responsive-desktop {
     padding: $gap-40 0px;
@@ -9,55 +9,53 @@
   .grid-layout {
     > div {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       height: auto;
 
       @include responsive-desktop {
         flex-wrap: wrap;
         gap: $gap-24;
+
       }
 
-      .container-heading-title {
-        width: 41%;
+      .container-heading-image {
+        width: 43%;
         height: auto;
-        display: flex;
-        flex-direction: column;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
+
+        img {
+          width: 80%;
+        }
+      }
+
+      div:nth-child(2) {
+        width: 53%;
 
         @include responsive-desktop {
           width: 100%;
         }
 
         h2 {
-          font-size: 5.6rem;
-          font-weight: 600;
-          margin: $gap-8 0;
-          width: 80%;
-
-          @include responsive-desktop {
-            font-size: 4rem;
-            width: 100%;
-          }
+          font-size: 4rem;
+          margin-bottom: 32px;
 
           b {
-            color: $color-secondary;
-            font-weight: 600;
+            background: $color-primary;
+            background-clip: text;
+            color: transparent;
+            font-weight: 400;
           }
-        }
-      }
-
-      div:nth-child(2) {
-        width: 55%;
-
-        @include responsive-desktop {
-          width: 100%;
         }
 
         p {
           font-size: 2.4rem;
           color: $color-white;
           line-height: 160%;
-          margin: $gap-40 0;
+          margin: 32px 0;
 
           @include responsive-desktop {
             font-size: 2rem;

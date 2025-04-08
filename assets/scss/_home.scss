@@ -1,5 +1,5 @@
 #s-home {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,16 +22,17 @@
       }
 
       #info-main {
-        width: 100%;
-        text-align: center;
-        z-index: 5;
+        width: 50%;
 
         h1 {
-          font-size: 7.2rem;
-          font-weight: 600;
+          font-size: 6.4rem;
+          font-weight: 500;
           margin-top: 16px;
           line-height: 110%;
-          margin-bottom: $gap-32;
+
+          background: $color-primary;
+          background-clip: text;
+          color: transparent;
 
           @include responsive-desktop {
             width: 100%;
@@ -40,25 +41,26 @@
         }
 
         > p {
-          font-size: 2.4rem;
+          font-size: 2.8rem;
           line-height: 160%;
-          color: $color-gray;
-          font-weight: 300;
-          width: 80%;
-          margin: 0 auto;
+          color: $color-white;
+          font-weight: 400;
+          margin: 32px 0 40px 0;
 
           @include responsive-desktop {
-            width: 100%;
             font-size: 2rem;
           }
         }
 
         a {
+          @include responsive-desktop {
+            width: 100%;
+          }
+
           button {
-            margin-top: 48px;
-            border-radius: 50px;
-            padding: 16px 56px;
-            background: $color-primary;
+            border-radius: 0px 8px 0px 8px;
+            padding: 16px 40px;
+            background: $color-secondary;
             font-weight: 500;
             font-size: 2rem;
             color: $color-white;
@@ -66,11 +68,6 @@
 
             @include responsive-desktop {
               width: 100%;
-            }
-
-            &:hover {
-              background: $color-white;
-              color: $color-primary;
             }
           }
         }

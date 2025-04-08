@@ -1,0 +1,94 @@
+#s-aboutme {
+  padding: 160px 0px;
+  background-color: #fff;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  .grid-layout {
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+
+      @include responsive-desktop {
+        flex-wrap: wrap;
+        gap: $gap-40;
+      }
+
+      #creator-photo {
+        width: 45%;
+        background-image: url("../images/cibelle-2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 644px;
+        border-radius: 40px;
+
+        @include responsive-desktop {
+          width: 100%;
+          height: 350px;
+        }
+
+        @include responsive-tablet {
+          height: 300px;
+        }
+
+        @include responsive-mobile {
+          height: 250px;
+        }
+      }
+
+      div:nth-child(2) {
+        width: 50%;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
+
+        h2 {
+          font-size: 4rem;
+          font-weight: 400;
+
+          background: $color-secondary;
+          background-clip: text;
+          color: transparent;
+
+          @include responsive-tablet {
+            font-size: 3.2rem;
+          }
+        }
+
+        p {
+          font-size: 2.4rem;
+          color: $color-dark;
+          line-height: 150%;
+          margin: $gap-24 0px 48px 0px;
+          font-weight: 500;
+        }
+
+        a {
+          @include responsive-desktop {
+            width: 100%;
+          }
+
+          button {
+            border-radius: 0px 8px 0px 8px;
+            padding: 16px 40px;
+            background: $color-secondary;
+            font-weight: 500;
+            font-size: 2rem;
+            color: $color-white;
+            cursor: pointer;
+
+            @include responsive-desktop {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
