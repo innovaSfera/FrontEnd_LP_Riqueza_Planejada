@@ -11,12 +11,20 @@
   right: 0;
   top: 0;
   z-index: -2;
+
+  @include responsive-tablet {
+    top: 64px;
+  }
 }
 
 footer {
   background-color: $color-dark-secondary;
   padding: 48px;
   text-align: center;
+
+  @include responsive-desktop {
+    padding: 48px 24px;
+  }
 
   h2 {
     margin-bottom: 16px;
@@ -29,10 +37,18 @@ footer {
       color: transparent;
       font-weight: 400;
     }
+
+    @include responsive-desktop {
+      font-size: 2rem;
+    }
   }
 
   p {
     font-size: 2rem;
     color: $color-gray;
+
+    @include responsive-desktop {
+      font-size: 1.8rem;
+    }
   }
 }

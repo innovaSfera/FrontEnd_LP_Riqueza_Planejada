@@ -12,6 +12,11 @@
       font-size: 4rem;
       width: 85%;
       margin: 0 auto 24px auto;
+
+      @include responsive-desktop {
+        width: 100%;
+        font-size: 3.2rem;
+      }
     }
 
     p {
@@ -19,6 +24,11 @@
       text-align: center;
       width: 85%;
       margin: 0 auto;
+
+      @include responsive-desktop {
+        width: 100%;
+        font-size: 2rem;
+      }
     }
   }
 }

@@ -17,6 +17,10 @@
         color: transparent;
         font-weight: 400;
       }
+
+      @include responsive-desktop {
+        font-size: 3.2rem;
+      }
     }
 
     > span {
@@ -24,7 +28,7 @@
       place-items: center;
 
       a {
-        @include responsive-desktop {
+        @include responsive-tablet {
           width: 100%;
         }
 
@@ -37,7 +41,7 @@
           color: $color-white;
           cursor: pointer;
 
-          @include responsive-desktop {
+          @include responsive-tablet {
             width: 100%;
           }
         }

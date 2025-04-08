@@ -17,6 +17,11 @@
         color: transparent;
         font-weight: 400;
       }
+
+      @include responsive-desktop {
+        font-size: 3.2rem;
+        margin-bottom: 40px;
+      }
     }
 
     > div {
@@ -42,11 +47,23 @@
         text-align: center;
         padding: 24px;
 
+        @include responsive-desktop {
+          width: 45%;
+        }
+
+        @include responsive-tablet {
+          width: 100%;
+        }
+
         > h4 {
           font-size: 2.4rem;
           margin-top: 12px;
           font-family: $font-description;
           font-weight: 400;
+
+          @include responsive-desktop {
+            font-size: 2rem;
+          }
         }
 
         > img {
@@ -68,6 +85,10 @@
         flex-grow: 1;
         height: auto;
         text-align: center;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
 
         > h3 {
           font-size: 2.4rem;
@@ -91,7 +112,7 @@
     }
 
     a {
-      @include responsive-desktop {
+      @include responsive-tablet {
         width: 100%;
       }
 

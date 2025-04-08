@@ -17,6 +17,11 @@
         color: transparent;
         font-weight: 400;
       }
+
+      @include responsive-desktop {
+        font-size: 3.2rem;
+        margin-bottom: 40px;
+      }
     }
   }
 
@@ -31,7 +36,7 @@
     }
 
     > div {
-      @include responsive-desktop {
+      @include responsive-tablet {
         width: 100%;
       }
     }
@@ -41,6 +46,10 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
+
+      @include responsive-desktop {
+        width: 100%;
+      }
 
       a {
         width: 100%;
@@ -71,16 +80,29 @@
       flex-direction: column;
       justify-content: space-between;
 
+      @include responsive-desktop {
+        width: 100%;
+      }
+
       h2 {
         font-size: 3.2rem;
         font-weight: 500;
         color: $color-secondary;
+
+        @include responsive-desktop {
+          font-size: 2.4rem;
+        }
       }
 
       p {
         font-size: 2.4rem;
         width: 80%;
         margin: 40px 0;
+
+        @include responsive-desktop {
+          width: 100%;
+          font-size: 2rem;
+        }
       }
 
       > a {
@@ -88,11 +110,17 @@
         background: #139d01;
         display: flex;
         align-items: center;
+        justify-content: center;
         border-radius: 8px;
         padding: 16px 40px;
+        gap: 16px;
 
         img {
           width: 32px;
+
+          @include responsive-desktop {
+            display: none;
+          }
         }
 
         button {
@@ -100,8 +128,11 @@
           font-size: 2rem;
           color: $color-white;
           cursor: pointer;
-          width: 100%;
           background: transparent;
+
+          @include responsive-desktop {
+            font-size: 1.8rem;
+          }
         }
       }
     }
@@ -128,6 +159,10 @@
       line-height: 150%;
       color: $color-secondary;
       font-family: $font-description;
+
+      @include responsive-desktop {
+        font-size: 2rem;
+      }
     }
 
     .icon {

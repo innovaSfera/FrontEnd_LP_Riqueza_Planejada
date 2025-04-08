@@ -17,6 +17,11 @@
         color: transparent;
         font-weight: 400;
       }
+
+      @include responsive-tablet {
+        font-size: 3.2rem;
+        margin-bottom: 40px;
+      }
     }
 
     .container-testimonial {
@@ -24,6 +29,10 @@
       justify-content: space-between;
       align-items: flex-start;
       gap: 32px;
+
+      @include responsive-desktop {
+        flex-wrap: wrap;
+      }
     }
 
     .testimonial-card {
@@ -34,6 +43,10 @@
 
       width: 30%;
       flex-grow: 1;
+
+      @include responsive-desktop {
+        width: 100%;
+      }
 
       > div {
         display: flex;
@@ -61,6 +74,10 @@
         font-size: 1.8rem;
         line-height: 160%;
         color: $color-white;
+
+        @include responsive-desktop {
+          font-size: 2rem;
+        }
       }
     }
 

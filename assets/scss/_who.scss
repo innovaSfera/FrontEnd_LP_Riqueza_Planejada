@@ -18,6 +18,11 @@
         color: transparent;
         font-weight: 400;
       }
+
+      @include responsive-desktop {
+        font-size: 3.2rem;
+        margin-bottom: 40px;
+      }
     }
 
     .who-card {
@@ -40,6 +45,10 @@
             background: $color-primary;
             background-clip: text;
             color: transparent;
+          }
+
+          @include responsive-desktop {
+            font-size: 2rem;
           }
         }
       }

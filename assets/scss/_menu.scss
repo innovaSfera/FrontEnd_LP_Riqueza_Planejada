@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     gap: 24px;
 
-    @include responsive-desktop {
+    @include responsive-tablet {
       gap: 16px;
       width: 100%;
     }
@@ -19,7 +19,7 @@
     img {
       width: 124px;
 
-      @include responsive-desktop {
+      @include responsive-tablet {
         display: none;
       }
     }

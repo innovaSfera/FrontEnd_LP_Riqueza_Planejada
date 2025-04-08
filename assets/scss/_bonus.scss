@@ -17,6 +17,10 @@
         color: transparent;
         font-weight: 400;
       }
+
+      @include responsive-desktop {
+        font-size: 3.2rem;
+      }
     }
 
     .bonus-exclusive {
@@ -26,17 +30,26 @@
       height: auto;
       margin-bottom: 100px;
 
-      @include responsive-desktop {
+      @include responsive-tablet {
         flex-wrap: wrap;
         gap: $gap-40;
+        margin-bottom: 48px;
       }
 
       > img {
         width: 45%;
+
+        @include responsive-tablet {
+          width: 100%;
+        }
       }
 
       .container-bonus {
         width: 50%;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
 
         h3 {
           font-size: 2.5rem;
@@ -74,6 +87,7 @@
       @include responsive-desktop {
         flex-wrap: wrap;
         gap: $gap-40;
+        margin-bottom: 48px;
       }
 
       #creator-photo {
@@ -118,7 +132,7 @@
           }
 
           @include responsive-tablet {
-            font-size: 3.2rem;
+            font-size: 2.4rem;
           }
         }
       }
@@ -135,9 +149,19 @@
       background: $color-dark-secondary;
       margin-bottom: 100px;
 
+      @include responsive-desktop {
+        flex-wrap: wrap;
+        padding: 24px 16px;
+        margin-bottom: 48px;
+      }
+
       img {
         width: 50%;
         border-radius: 8px;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
       }
 
       h3 {
@@ -152,7 +176,7 @@
         }
 
         @include responsive-tablet {
-          font-size: 3.2rem;
+          font-size: 2.4rem;
         }
       }
     }
@@ -166,6 +190,7 @@
       @include responsive-desktop {
         flex-wrap: wrap;
         gap: $gap-40;
+        flex-direction: column-reverse;
       }
 
       #creator-photo {
@@ -178,16 +203,20 @@
         border-radius: 24px;
 
         @include responsive-desktop {
+          background-position: top;
+        }
+
+        @include responsive-desktop {
           width: 100%;
-          height: 350px;
+          height: 400px;
         }
 
         @include responsive-tablet {
-          height: 300px;
+          height: 350px;
         }
 
         @include responsive-mobile {
-          height: 250px;
+          height: 300px;
         }
       }
 
@@ -209,7 +238,7 @@
           }
 
           @include responsive-tablet {
-            font-size: 3.2rem;
+            font-size: 2.4rem;
           }
         }
 
@@ -219,6 +248,10 @@
           margin: $gap-24 0px 48px 0px;
           font-weight: 400;
           color: $color-gray;
+
+          @include responsive-tablet {
+            font-size: 2rem;
+          }
         }
 
         a {

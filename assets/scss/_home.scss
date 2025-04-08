@@ -4,9 +4,10 @@
   align-items: center;
   justify-content: center;
 
-  @include responsive-desktop {
-    padding: $gap-40 0px;
-    margin-top: $gap-64;
+  @include responsive-tablet {
+    padding: 100px 0px;
+    margin-top: 100px;
+    min-height: auto;
   }
 
   .grid-layout {
@@ -16,13 +17,17 @@
       justify-content: space-between;
       gap: $gap-96;
 
-      @include responsive-desktop {
+      @include responsive-tablet {
         flex-wrap: wrap;
         gap: $gap-48;
       }
 
       #info-main {
         width: 50%;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
 
         h1 {
           font-size: 6.4rem;
@@ -53,7 +58,7 @@
         }
 
         a {
-          @include responsive-desktop {
+          @include responsive-mobile {
             width: 100%;
           }
 
@@ -66,7 +71,7 @@
             color: $color-white;
             cursor: pointer;
 
-            @include responsive-desktop {
+            @include responsive-mobile  {
               width: 100%;
             }
           }
