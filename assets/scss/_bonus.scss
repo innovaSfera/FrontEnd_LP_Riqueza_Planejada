@@ -1,0 +1,246 @@
+#s-bonus {
+  padding: 160px 0px;
+
+  @include responsive-desktop {
+    padding: $gap-40 0px;
+  }
+
+  .grid-layout {
+    > h2 {
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 80px;
+
+      b {
+        background: $color-primary;
+        background-clip: text;
+        color: transparent;
+        font-weight: 400;
+      }
+    }
+
+    .bonus-exclusive {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+      margin-bottom: 100px;
+
+      @include responsive-desktop {
+        flex-wrap: wrap;
+        gap: $gap-40;
+      }
+
+      > img {
+        width: 45%;
+      }
+
+      .container-bonus {
+        width: 50%;
+
+        h3 {
+          font-size: 2.5rem;
+          margin-bottom: 32px;
+          font-weight: 400;
+          line-height: 150%;
+
+          b {
+            background: $color-primary;
+            background-clip: text;
+            color: transparent;
+          }
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin: 12px 0px;
+
+          p {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    .ebook {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+      margin-bottom: 100px;
+
+      @include responsive-desktop {
+        flex-wrap: wrap;
+        gap: $gap-40;
+      }
+
+      #creator-photo {
+        width: 35%;
+        background-image: url("../images/mulher-tablet.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+        border-radius: 24px;
+
+        @include responsive-desktop {
+          width: 100%;
+          height: 350px;
+        }
+
+        @include responsive-tablet {
+          height: 300px;
+        }
+
+        @include responsive-mobile {
+          height: 250px;
+        }
+      }
+
+      div:nth-child(1) {
+        width: 60%;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
+
+        h2 {
+          font-size: 3.2rem;
+          font-weight: 400;
+          line-height: 150%;
+
+          b {
+            background: $color-primary;
+            background-clip: text;
+            color: transparent;
+          }
+
+          @include responsive-tablet {
+            font-size: 3.2rem;
+          }
+        }
+      }
+    }
+
+    .card-planilha {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 48px;
+      padding: 24px 48px;
+      border-radius: 8px;
+      border: 2px solid $color-dark-border;
+      background: $color-dark-secondary;
+      margin-bottom: 100px;
+
+      img {
+        width: 50%;
+        border-radius: 8px;
+      }
+
+      h3 {
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 150%;
+
+        b {
+          background: $color-primary;
+          background-clip: text;
+          color: transparent;
+        }
+
+        @include responsive-tablet {
+          font-size: 3.2rem;
+        }
+      }
+    }
+
+    .plane {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+
+      @include responsive-desktop {
+        flex-wrap: wrap;
+        gap: $gap-40;
+      }
+
+      #creator-photo {
+        width: 35%;
+        background-image: url("../images/cibelle-3.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+        border-radius: 24px;
+
+        @include responsive-desktop {
+          width: 100%;
+          height: 350px;
+        }
+
+        @include responsive-tablet {
+          height: 300px;
+        }
+
+        @include responsive-mobile {
+          height: 250px;
+        }
+      }
+
+      div:nth-child(1) {
+        width: 60%;
+
+        @include responsive-desktop {
+          width: 100%;
+        }
+
+        h2 {
+          font-size: 4rem;
+          font-weight: 400;
+
+          b {
+            background: $color-primary;
+            background-clip: text;
+            color: transparent;
+          }
+
+          @include responsive-tablet {
+            font-size: 3.2rem;
+          }
+        }
+
+        p {
+          font-size: 2.4rem;
+          line-height: 150%;
+          margin: $gap-24 0px 48px 0px;
+          font-weight: 400;
+          color: $color-gray;
+        }
+
+        a {
+          @include responsive-desktop {
+            width: 100%;
+          }
+
+          button {
+            border-radius: 0px 8px 0px 8px;
+            padding: 16px 40px;
+            background: $color-secondary;
+            font-weight: 500;
+            font-size: 2rem;
+            color: $color-white;
+            cursor: pointer;
+
+            @include responsive-desktop {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
