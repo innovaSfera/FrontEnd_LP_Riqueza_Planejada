@@ -57,7 +57,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 505px;
+      height: 500px;
 
       @include responsive-desktop {
         height: 100%;
@@ -67,6 +67,9 @@
 
     .swiper-pagination-bullet {
       background-color: #fff;
+      width: 20px;
+      height: 20px;
+      margin: 8px 12px;
     }
 
     .swiper-slide img {

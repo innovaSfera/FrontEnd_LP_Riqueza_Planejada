@@ -1,14 +1,3 @@
-const sr = ScrollReveal({
-  distance: "50px",
-  duration: 2000,
-});
-
-sr.reveal(".delayTop", { delay: 400, origin: "top" });
-sr.reveal(".delayLeft", { delay: 400, origin: "left" });
-sr.reveal(".delayRight", { delay: 400, origin: "right" });
-sr.reveal(".delayBottom", { delay: 400, origin: "bottom" });
-sr.reveal(".delayInterval", { interval: 400, origin: "top" });
-
 let acc = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < acc.length; i++) {
