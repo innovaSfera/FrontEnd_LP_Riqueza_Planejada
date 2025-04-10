@@ -16,7 +16,10 @@
     <meta name="copyright" content="Método RP 2025" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta property="og:title" content="Método RP - Cibelle Machado" />
-    <meta property="og:image" content="https://cibelle-one.vercel.app/assets/images/preview.png" />
+    <meta
+      property="og:image"
+      content="https://cibelle-one.vercel.app/assets/images/preview.png"
+    />
     <link
       rel="shortcut icon"
       href="./assets/images/logo-page.png"
@@ -246,15 +249,22 @@
           </div>
 
           <div class="card-planilha">
-            <img src="./assets/images/teste.jpeg" alt="Imagem" />
+            <div class="image-container">
+              <img
+                src="./assets/images/planilha.jpeg"
+                alt="Imagem"
+                id="img"
+              />
+              <h3 class="expand-button" onclick="expandImage()">🔍 Expandir</h3>
+            </div>
 
-            <h3>
+            <h4>
               <b
                 >Você ainda vai receber um combo de planilhas e materiais de
                 apoio</b
               >
               para facilitar a sua jornada rumo à independência financeira.
-            </h3>
+            </h4>
           </div>
 
           <div class="plane">
@@ -549,7 +559,7 @@
               <h5>Ou 12x de R$ 99,70</h5>
 
               <div>
-                <p>Pagamento à vista via PIX ou boleto. </p>
+                <p>Pagamento à vista via PIX ou boleto.</p>
                 <p>No cartão de crédito, em até 12x</p>
               </div>
 
@@ -699,6 +709,39 @@
     </main>
 
     <script src="assets/js/main.js"></script>
+
+    <script>
+      function expandImage() {
+        const img = document.getElementById("img");
+        const imgSrc = img.src;
+
+        const overlay = document.createElement("div");
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100vw";
+        overlay.style.height = "100vh";
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+        overlay.style.display = "flex";
+        overlay.style.alignItems = "center";
+        overlay.style.justifyContent = "center";
+        overlay.style.zIndex = "9999";
+        overlay.style.cursor = "pointer";
+
+        const expandedImg = document.createElement("img");
+        expandedImg.src = imgSrc;
+        expandedImg.style.maxWidth = "90%";
+        expandedImg.style.maxHeight = "90%";
+        expandedImg.style.borderRadius = "8px";
+
+        overlay.appendChild(expandedImg);
+        document.body.appendChild(overlay);
+
+        overlay.addEventListener("click", () => {
+          document.body.removeChild(overlay);
+        });
+      }
+    </script>
 
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";

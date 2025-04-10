@@ -149,25 +149,23 @@
       background: $color-dark-secondary;
       margin-bottom: 100px;
 
+      width: 100%;
+
       @include responsive-desktop {
         flex-wrap: wrap;
         padding: 24px 16px;
         margin-bottom: 48px;
       }
 
-      img {
-        width: 50%;
-        border-radius: 8px;
+      h4 {
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 150%;
+        width: 48%;
 
         @include responsive-desktop {
           width: 100%;
         }
-      }
-
-      h3 {
-        font-size: 3.2rem;
-        font-weight: 400;
-        line-height: 150%;
 
         b {
           background: $color-primary;

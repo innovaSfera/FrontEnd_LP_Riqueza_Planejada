@@ -52,3 +52,38 @@ footer {
     }
   }
 }
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+
+  @include responsive-desktop {
+    width: 100%;
+  }
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.expand-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 2rem;
+  font-family: $font-description;
+}
+
+.image-container:hover .expand-button {
+  opacity: 1;
+}
