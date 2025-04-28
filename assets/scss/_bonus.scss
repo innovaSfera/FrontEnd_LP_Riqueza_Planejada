@@ -252,7 +252,38 @@
           }
         }
 
-        a {
+        .whatsapp {
+          width: auto;
+          background: #139d01;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          padding: 16px 40px;
+          gap: 16px;
+
+          img {
+            width: 32px;
+
+            @include responsive-desktop {
+              display: none;
+            }
+          }
+
+          button {
+            font-weight: 500;
+            font-size: 2rem;
+            color: $color-white;
+            cursor: pointer;
+            background: transparent;
+
+            @include responsive-desktop {
+              font-size: 1.8rem;
+            }
+          }
+        }
+
+        .normal {
           @include responsive-desktop {
             width: 100%;
           }

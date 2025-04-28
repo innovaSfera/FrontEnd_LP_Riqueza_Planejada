@@ -33,7 +33,7 @@
           font-size: 6.4rem;
           font-weight: 500;
           margin-top: 16px;
-          line-height: 110%;
+          line-height: 120%;
 
           background: $color-primary;
           background-clip: text;
@@ -57,7 +57,38 @@
           }
         }
 
-        a {
+        .whatsapp {
+          width: auto;
+          background: #139D01;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          padding: 16px 40px;
+          gap: 16px;
+
+          img {
+            width: 32px;
+
+            @include responsive-desktop {
+              display: none;
+            }
+          }
+
+          button {
+            font-weight: 500;
+            font-size: 2rem;
+            color: $color-white;
+            cursor: pointer;
+            background: transparent;
+
+            @include responsive-desktop {
+              font-size: 1.8rem;
+            }
+          }
+        }
+
+        .normal {
           @include responsive-mobile {
             width: 100%;
           }
@@ -71,7 +102,7 @@
             color: $color-white;
             cursor: pointer;
 
-            @include responsive-mobile  {
+            @include responsive-mobile {
               width: 100%;
             }
           }
