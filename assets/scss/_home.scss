@@ -57,9 +57,40 @@
           }
         }
 
+        input {
+          width: 100%;
+          padding: 16px 40px;
+          margin-bottom: 32px;
+          border-radius: 8px;
+          padding-left: 20px;
+          font-size: 2rem;
+
+          @include responsive-desktop {
+            font-size: 1.8rem;
+          }
+        }
+
+        .lista {
+          width: 100%;
+          background: #139d01;
+          border-radius: 8px;
+          padding: 16px 40px;
+          font-size: 2rem;
+          color: $color-white;
+          cursor: pointer;
+
+          @include responsive-desktop {
+            font-size: 1.8rem;
+          }
+
+          &:hover {
+            background: #138b04;
+          }
+        }
+
         .whatsapp {
           width: auto;
-          background: #139D01;
+          background: #139d01;
           display: inline-flex;
           align-items: center;
           justify-content: center;

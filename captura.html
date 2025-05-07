@@ -70,10 +70,12 @@
                 abrirmos novas turmas.
               </p>
 
-              <a href="#" rel="noopener" target="_blank" class="whatsapp">
-                <img src="./assets/images/icons/whatsapp.svg" alt="Ícone" />
-                <button>Entrar na lista de espera</button>
-              </a>
+              <input type="text" id="nome" placeholder="Seu nome completo" />
+              <input type="email" id="email" placeholder="exemplo@email.com" />
+
+              <button onclick="enviarParaWhatsapp()" class="lista">
+                Entrar na lista
+              </button>
             </div>
           </div>
         </div>
@@ -146,7 +148,7 @@
               </article>
             </div>
 
-            <a href="#" rel="noopener" target="_blank" class="whatsapp">
+            <a href="#s-home" class="whatsapp">
               <img src="./assets/images/icons/whatsapp.svg" alt="Ícone" />
               <button>Entrar na lista de espera</button>
             </a>
@@ -186,7 +188,7 @@
           </div>
 
           <span>
-            <a href="#" rel="noopener" target="_blank" class="whatsapp">
+            <a href="#s-home" class="whatsapp">
               <img src="./assets/images/icons/whatsapp.svg" alt="Ícone" />
               <button>Entrar na lista de espera</button>
             </a>
@@ -280,7 +282,7 @@
                 estratégica.
               </p>
 
-              <a href="#" rel="noopener" target="_blank" class="whatsapp">
+              <a href="#s-home" class="whatsapp">
                 <img src="./assets/images/icons/whatsapp.svg" alt="Ícone" />
                 <button>Entrar na lista de espera</button>
               </a>
@@ -362,7 +364,7 @@
           </div>
 
           <span>
-            <a href="#" rel="noopener" target="_blank" class="whatsapp">
+            <a href="#s-home" class="whatsapp">
               <img src="./assets/images/icons/whatsapp.svg" alt="Ícone" />
               <button>Entrar na lista de espera</button>
             </a>
@@ -503,7 +505,7 @@
                 focado em ação e resultados reais.
               </p>
 
-              <a href="#" rel="noopener" target="_blank" class="whatsapp">
+              <a href="#s-home" rel="noopener" target="_blank" class="whatsapp">
                 <img src="./assets/images/icons/whatsapp.svg" alt="Ícone" />
                 <button>Entrar na lista de espera</button>
               </a>
@@ -623,6 +625,26 @@
     </main>
 
     <script src="assets/js/main.js"></script>
+
+    <script>
+      function enviarParaWhatsapp() {
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+
+        if (!nome || !email) {
+          alert("Preencha todos os campos!");
+          return;
+        }
+
+        const mensagem = `Olá Cibelle! Me chamo ${nome}, tenho interesse no Método RP! Meu email é ${email}`;
+        const numero = "551400000000";
+
+        const url = `https://wa.me/${numero}?text=${encodeURIComponent(
+          mensagem
+        )}`;
+        window.open(url, "_blank");
+      }
+    </script>
 
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
