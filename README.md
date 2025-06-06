@@ -20,6 +20,7 @@ Este projeto é uma landing page desenvolvida para apresentar o lançamento de u
 
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge\&logo=vercel\&logoColor=white)
 ![Hostinger](https://img.shields.io/badge/Hostinger-673de6?style=for-the-badge\&logo=hostinger\&logoColor=white)
+![Hortmart](https://img.shields.io/badge/Hortmart-00c897?style=for-the-badge\&logo=vercel\&logoColor=white)
 
 ---
 
@@ -37,8 +38,8 @@ Este projeto é uma landing page desenvolvida para apresentar o lançamento de u
 
 | Data       | Versão | Ambiente        | Descrição                         |
 | ---------- | ------ | --------------- | --------------------------------- |
-| 06/06/2025 | v1.0.1 | Desenvolvimento | Correção valores pagina principal |
-| 06/06/2025 | v1.0.1 | Produção        | Correção valores pagina principal |
+| 06/06/2025 | v1.0.1 | Desenvolvimento | Correção valores página principal |
+| 06/06/2025 | v1.0.1 | Produção        | Correção valores página principal |
 
 ---
 
@@ -63,6 +64,4 @@ npm start # ou yarn start
 ## 📄 Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
-
----
 
